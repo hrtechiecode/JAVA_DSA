@@ -28,7 +28,7 @@ public class String_basics {
         String p=sc.nextLine();
         System.out.println(p.length());
         System.out.println(p.charAt(2));
-        System.out.println(p.indexOf('a'));
+        System.out.println(p.indexOf('a')); //if nhi hai toh o/p -1
         String a1="hello";
         String a2="holla";
         System.out.println(a1.compareTo(a2));
@@ -37,6 +37,12 @@ public class String_basics {
          a3="pie";
 
      System.out.println(a3);
-
+        System.out.println();
+String st="lily"+10+20;
+        System.out.println(st);
+        String st2=10+"lily"+10+20;
+        System.out.println(st2);
+        String st3=10+30+"lily"+10+20;
+        System.out.println(st3);
     }
 }

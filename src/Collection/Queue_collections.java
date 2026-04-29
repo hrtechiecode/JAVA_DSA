@@ -20,6 +20,7 @@ public class Queue_collections {
 
                 // Dequeue
                 System.out.println("Removed: " + queue.poll()); // A
+
                 System.out.println("Queue after poll: " + queue); // [B, C]
 
                 // Check front again

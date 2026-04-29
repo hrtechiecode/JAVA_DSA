@@ -2,21 +2,24 @@ package LinkedList;
 
 public class Basics {
     //create datatype
-    public static class Node{
-        int data;
-        Node next;
-        Node(int data){
+    public static class Node{ //crteate datatype     //Static class → class level par hoti hai
+        //  main() use directly access kar sakta hai
+       int data;//Can data be other than int?
+// ✔ YES — String, double, object, anything
+        Node next;//next ka type Node hi hoga Kyunki node node ko hi point karta hai
+     // by default  next = null;
+        Node(int data){// constructor
             this.data=data;
         }
     }
+    //traversing
     public static void insertatend(Node head,int val){
     Node temp = new Node(val);
     Node n=head;
     while(n.next!=null){
         n=n.next;
     }
-    n.next=temp;
-
+        n.next=temp;
     }
     public static void display(Node head){
       Node temp=head;

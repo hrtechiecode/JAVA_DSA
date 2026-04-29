@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 public class String_2 {
     public static void change(String s) {
-
-        s = "tom";
+        s = "tom";//pass by value
     }
 
     public static void change2(ArrayList<String>l) {

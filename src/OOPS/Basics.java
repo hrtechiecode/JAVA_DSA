@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Basics {
     //creating a new datatype with multiple datatypes
-    public static class Student {
+    public static class Student {//ek aisa obj create karna jismein bahut saare attributes
         String name;
         int Roll_No;
         double percent;
@@ -15,11 +15,13 @@ public class Basics {
         String color;
     }
     public static void fun( Student x){
+
         System.out.println(x.name);
     }
     //pass by value
     public static void change( int p){
-         p=5;
+
+        p=5;
     }
     //user defined class are pass by reference
     public static void array( Student x){

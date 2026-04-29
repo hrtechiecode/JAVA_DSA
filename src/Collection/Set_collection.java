@@ -4,8 +4,8 @@ import java.util.*;
 
 public class Set_collection {
     //unordered unique
-    static void hashset(){
-                Set<String> fruits = new HashSet<>();
+    static void hashset(){//efficient
+                Set<String> fruits = new HashSet<>(); //unique elements  ,unordered
 
                 // Add elements
                 fruits.add("Apple");
@@ -27,8 +27,8 @@ public class Set_collection {
                 }
             }
             //sorted
-    static void treeset(){
-        Set<Integer> treeSet = new TreeSet<>();
+    static void treeset(){ //less efficient
+        Set<Integer> treeSet = new TreeSet<>(); //sorted
         treeSet.add(30);
         treeSet.add(10);
         treeSet.add(20);
@@ -38,7 +38,7 @@ public class Set_collection {
     }
     //ordered
 static void linkedset(){
-    Set<String> orderedSet = new LinkedHashSet<>();
+    Set<String> orderedSet = new LinkedHashSet<>();//less efficient than hashset
     orderedSet.add("A");
     orderedSet.add("C");
     orderedSet.add("B");

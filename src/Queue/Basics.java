@@ -1,8 +1,6 @@
 package Queue;
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class Basics {
     public static void main(String[] args) {
@@ -16,6 +14,8 @@ public class Basics {
         System.out.println("stack "+st);
         System.out.println("stack pop "+st.pop());
         System.out.println("after remove an element "+st);
+        //Queue<Integer>que=new Queue<>(); //not applicable
+       // Queue <Integer>q=new ArrayDeque<>(); applicable
         Queue <Integer>q=new LinkedList<>();
         q.add(1);
         q.add(2);
@@ -30,6 +30,7 @@ public class Basics {
         q.poll(); //same as remove
         System.out.println(q);
         System.out.println("top "+q.peek());
+        System.out.println(q.element());
         System.out.println(q.isEmpty());
     //print queue
         Queue <Integer>q2=new LinkedList<>();

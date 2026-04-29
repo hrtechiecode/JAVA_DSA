@@ -1,6 +1,6 @@
 package String;
 import java.util.*;
-public class Substring {
+public class Substring {   //substring continuous part e.g abc==a,b,c,ab,bc,abc
     //print all substring of String a
     static void substring(){
         String a="physics";//0 to 6

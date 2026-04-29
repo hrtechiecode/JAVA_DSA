@@ -1,7 +1,5 @@
 package Greedy_algorithm;
 
-import Array.Array;
-
 import java.util.Arrays;
 
 public class Min_coin {

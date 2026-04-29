@@ -5,29 +5,48 @@ import java.util.Stack;
 
 public class Insertatbottom_or_anyindex {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         Stack<Integer> s = new Stack<>();
-        System.out.println("enter number of element ");
+
+        // Input
+        System.out.println("Enter number of elements:");
         int n = sc.nextInt();
-        System.out.println("enter element ");
-        for(int i=0;i<n;i++){
-            int x= sc.nextInt();
-            s.push(x);
+
+        System.out.println("Enter elements:");
+        for (int i = 0; i < n; i++) {
+            s.push(sc.nextInt());
         }
-        System.out.println(s);
-        //insert at any index or at bottom
-        int idx=2;
-        int element=10;
+
+        System.out.println("Original Stack: " + s);
+
+        // Insert details
+        int idx = 2;        // 0-based index from bottom
+        int element = 10;
+
+        // Index validation
+        if (idx < 0 || idx > s.size()) {
+            System.out.println("Invalid index");
+            return;
+        }
+
+        // Auxiliary stack
         Stack<Integer> temp = new Stack<>();
-        while(s.size()>idx){
+
+        // Move elements above index
+        while (s.size() > idx) {
             temp.push(s.pop());
         }
-        temp.push(element);
-        while(temp.size()>0){
+
+        // Insert element
+        s.push(element);
+
+        // Restore elements
+        while (!temp.isEmpty()) {
             s.push(temp.pop());
         }
-        System.out.println(s);
 
-
+        // Output
+        System.out.println("Stack after insertion: " + s);
     }
 }

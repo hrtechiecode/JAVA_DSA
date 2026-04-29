@@ -1,7 +1,5 @@
 package Greedy_algorithm;
 
-import Array.Array;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

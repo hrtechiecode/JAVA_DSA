@@ -8,7 +8,7 @@ public class Arraylistcollection {
       while(i<j){
           Integer temp=Integer.valueOf(list.get(i));
           list.set(i,list.get(j));
-list.set(j,temp);
+           list.set(j,temp);
           i++;
           j--;
       }
@@ -22,6 +22,7 @@ list.set(j,temp);
         l.add(10);
         l.add(5);
         l.add(20);
+
         // Sort in ascending order
         Collections.sort(l);
         System.out.println("Sorted ascending: " + l);
@@ -29,29 +30,37 @@ list.set(j,temp);
         // Sort in descending order
         Collections.sort(l, Collections.reverseOrder());
         System.out.println("Sorted descending: " + l);
+
         //print without loop
         System.out.println(l);
+
         //to get element at index i
-        System.out.println(l.get(0));
+        System.out.println("to get element at index i "+l.get(0));
+
         //print with for loop
         for(int i=0;i<l.size();i++){
             System.out.println(l.get(i));
         }
         //add element at idx
         l.add(0,5);
-        System.out.println(l);
+        System.out.println("add element at idx "+l);
+
         //modify
         l.set(1,10);
-        System.out.println(l);
+        System.out.println("modify "+l);
+
         //remove
         l.remove(1);
-        System.out.println(l);
+        System.out.println("remove "+l);
+
         //remove element e
         l.remove(Integer.valueOf(5));
-        System.out.println(l);
+        System.out.println("remove element "+l);
+
         //checking element exist or not
         boolean ans=l.contains(Integer.valueOf(2));
-        System.out.println(ans);
+        System.out.println("checking element exist or not "+ans);
+
         //if you don't specify class, you can put anything inside l
         ArrayList l2=new ArrayList();
         l2.add("hello") ;

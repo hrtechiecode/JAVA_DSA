@@ -1,5 +1,7 @@
 package String;
 
+import java.util.Scanner;
+
 public class palindrome {
     static boolean ispalindrome(String s) {
         //two pointers
@@ -13,13 +15,15 @@ public class palindrome {
                 return false;
             }
             i++;
-            j--;
+             j--;
         }
         return true;
     }
 
     public static void main(String[] args) {
-        String s = "abba";
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter string");
+        String s = sc.nextLine();
         System.out.println(ispalindrome(s));
     }
 }

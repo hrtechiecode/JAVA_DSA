@@ -7,6 +7,7 @@ public class Search_an_element {
         int data;
         Node next;
         Node(int data) {
+
             this.data = data;
         }
     }
